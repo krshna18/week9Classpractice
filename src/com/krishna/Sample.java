@@ -3,9 +3,9 @@ package com.krishna;
 public class Sample {
     public static void main(String[] args)
     {
-        String input="Welcome to Java Session Session Session";
+        String input="hello hello how Are you HELLO are there happy test you";
         String[] words=input.split(" ");
-        int wrc=1;
+        int wordcount=1;
 
         for(int i=0;i<words.length;i++)
         {
@@ -14,13 +14,13 @@ public class Sample {
 
                 if(words[i].equals(words[j]))
                 {
-                    wrc=wrc+1;
+                    wordcount=wordcount+1;
                     words[j]="0";
                 }
             }
             if(words[i]!="0")
-                System.out.println(words[i]+"--"+wrc);
-            wrc=1;
+                System.out.println(words[i]+"--"+wordcount);
+            wordcount=1;
 
         }
 
